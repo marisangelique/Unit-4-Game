@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rick and Morty RPG</title>
+        <link href="https://fonts.googleapis.com/css?family=Creepster|Gaegu" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="shortcut icon" href="assets/images/logo copy 2.png">
+        
+    </head>
+    <body>
+        <div class="firstPage" id="welcome">
+            <!-- 1st Display -->
+            <h1>Rick and Morty Adventures</h1>
+            <h3>Help them save our universe!</h3>
+                <!-- The "begin" id should hide this screen and display character -->
+                <button class="btn-large btn-block start" id="begin">Start</button>
+        </div>
+            <div class="secondPage" id="character" style="display: none">
+                <!-- Second page should display "character" -->
+                <h1>Pick a Character:</h1>
+                <span>
+                    <button id="rick" class="rick">
+                        <div>
+                            <img src="assets/images/rick.jpg" height="200" width="200">
+                        </div>
+                        Rick Sanchez(100) Attack Power: 25
+                    </button>
+                    <button id="morty" class="morty">
+                        <div>
+                            <img src="assets/images/morty.jpg" height="200" width="200">
+                        </div>
+                        Morty Smith (100) Attack Power: 15
+                    </button>
+                <!-- Depending on who they click, it will display correlating page and hide "character" section -->
+                </span>
+            </div>
+
+                <div class="thirdPage" id="rickOption" style="display:none">
+                    <h1>Chose an opponent:</h1>
+                    <!-- Rick: Jerry, Snowball, Rick -->
+                        <div class="opponents row">
+                            <button id="jerry" class="btn opponentVsFighter">
+                                <img src="assets/images/jerry.jpg" height="200" width="200">
+                                    <h3>Jerry Smith (120) Attack Power: 7</h3>
+                            </button>
+                            <button id="snowball" class="btn opponentVsFighter">
+                                <img src="assets/images/snowball.jpg" height="200" width="200">
+                                    <h3>Snowball (140) Attack Power: 5</h3>
+                            </button>
+                            <button id="evilRick" class="btn opponentVsFighter">
+                                <img src="assets/images/evil-rick.jpg" height="200" width="200">
+                                    <h3>Evil Rick (200) Attack Power: 9</h3>
+                            </button>
+                        </div>
+                    <!-- Back button to change character -->
+                    <button id="backCharacter" class="back">Back</button>
+                </div>
+
+                <div class="thirdPage" id="mortyOption" style="display:none">
+                        <h1>Chose an opponent:</h1>
+                        <!-- Morty: Scary Terry, Mr.Goldenfold, Morty -->
+                            <div class="opponents row">
+                                    <button id="scaryTerry" class="btn opponentVsFighter">
+                                        <img src="assets/images/scary-terry.jpeg" height="200" width="200">
+                                            <h3>Scary Terry (140) Attack Power: 5</h3>
+                                    </button>
+                                    <button id="mrGoldenfold" class="btn opponentVsFighter">
+                                        <img src="assets/images/mr.goldenfold.jpg" height="200" width="200">
+                                            <h3>Mr.Goldenfold (75) Attack Power: 4</h3>
+                                    </button>
+                                    <button id="evilMorty" class="btn opponentVsFighter">
+                                        <img src="assets/images/evil-morty.jpg" height="200" width="200">
+                                            <h3>Evil Morty (180) Attack Power: 5</h3>
+                                    </button>
+                            </div>
+                        <!-- Back button to change character -->
+                        <button id="mortyBackCharacter" class="back">Back</button>
+                    </div>
+                    <div class="fight" id="fight" style="display:none">
+                        
+                        <div class="fightTitle">
+                            <h1>Now FIGHT!</h1>
+                        </div>
+                        
+                        <div class="fighterInfo">
+                            <h3>Your Health: <span id="health" class="health"> </span></h3>
+                            <h3>Your Attack Power: <span id="attackPower" class="attackPower"> </span></h3>
+                        </div>
+
+                        <div class="opponentInfo">
+                            <h3>Opponent Health: <span id="opponentHealth" class="health"> </span></h3>
+                            <h3>Opponent Attack Power: <span id="opponentAttackPower" class="attackPower"> </span></h3>
+                        </div> 
+
+                    
+                        <div class="fightRing row">
+                                <div id="fighter" class="fighter"> 
+                                        <div id="rickFighter" class="rickFighter" style="display:none">
+                                            <img src="assets/images/rick.jpg" height="200" width="200">
+                                            <div>Rick Sanchez</div> 
+                                        </div>
+                                        
+                                        <div id="mortyFighter" class="mortyFighter" style="display:none">
+                                            <img src="assets/images/morty.jpg" height="200" width="200">
+                                            <div>Morty Smith</div>
+                                        </div>
+                                </div>
+
+                                <div id="attack" class="attack">ATTACK</div>
+
+                                <div id="fighterOpponent" class="fighterOpponent"> 
+                                    <div id="jerryFighter"  style="display:none">
+                                            <img src="assets/images/jerry.jpg" height="200" width="200">
+                                            <div>Jerry Smith</div>
+                                    </div>
+                                    <div id="snowballFighter"  style="display:none">
+                                            <img src="assets/images/snowball.jpg" height="200" width="200">
+                                            <div>Snowball</div>
+                                    </div>
+                                    <div id="evilRickFighter"  style="display:none">
+                                            <img src="assets/images/evil-rick.jpg" height="200" width="200">
+                                            <div>Evil Rick</div> 
+                                    </div>
+                                    <div id="scaryTerryFighter"  style="display:none">
+                                            <img src="assets/images/scary-terry.jpeg" height="200" width="200">
+                                            <div>Scary Terry</div>
+                                    </div>
+                                    <div id="mrGoldenfoldFighter"  style="display:none">
+                                            <img src="assets/images/mr.goldenfold.jpg" height="200" width="200">
+                                            <div>Mr.Goldenfold</div>
+                                    </div>
+                                    <div id="evilMortyFighter"  style="display:none">
+                                            <img src="assets/images/evil-morty.jpg" height="200" width="200">
+                                            <div>Evil Morty</div> 
+                                    </div>
+                                </div>
+                               
+                            </div>
+                    </div>
+
+                    <div class="resultsPage" >
+                        <div class="winPage" id="winPage" style="display:none">
+                            <h2>Congrats, you won this round! Now chose another opponent.</h2>
+                            <button id="nextPage" class="nextPage">Fight</button>
+                        </div>
+                        <div class="losePage" id="losePage" style="display:none">
+                            <h2>You did not win and our universe has ended. Thanks.</h2>
+                            <button id="tryAgain" class="tryAgain">Try Again</button>
+                        </div>
+                    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> 
+    <script src="assets/javascript/game.js"></script>
+    </body>
+</html>

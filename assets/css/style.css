@@ -1,0 +1,458 @@
+body{
+    background: url("../images/background.jpg");
+    background-size: 1200px;
+    background-position-x: 90px;
+}
+
+h1{
+    font-family: 'Creepster', cursive;
+    color: #7FFF00;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00FFFF, 0 0 40px #00FFFF, 0 0 50px #00FFFF, 0 0 60px #00FFFF, 0 0 70px #00FFFF;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #000000, 0 0 30px #40E0D0, 0 0 40px #40E0D0, 0 0 50px #40E0D0, 0 0 60px #40E0D0, 0 0 70px #40E0D0, 0 0 80px #40E0D0;
+    }
+}
+
+h3{
+    font-family: 'Gaegu', cursive;
+    color: #40E0D0;
+}
+
+h2{
+    font-family: 'Creepster', cursive;
+    color: #7FFF00;
+
+}
+
+.start{
+    background-color: #00FFFF;
+    font-family: 'Gaegu', cursive;
+    border-style: solid;
+    border-radius: 10px;
+    margin-top: 400px;
+}
+
+.firstPage{
+    margin: 40px 200px 0px 200px;
+}
+
+.secondPage{
+    text-align: center;
+    margin: 60px 0px 0px -25px;
+}
+
+.thirdPage{
+    text-align: center;
+    margin: 60px 0px 0px -25px;
+}
+
+.rick{
+    font-family: 'Gaegu', cursive;
+    color: #fff;
+    font-size: 28px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    margin-left: -60px;
+    margin-top: 70px;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.rickFighter{
+    font-family: 'Gaegu', cursive;
+    color: #fff;
+    font-size: 28px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    margin-left: -60px;
+    margin-top: 90px;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.morty{
+    font-family: 'Gaegu', cursive;
+    color: #fff;
+    font-size: 28px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    margin-left: 400px;
+    margin-top: 90px;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.mortyFighter{
+    font-family: 'Gaegu', cursive;
+    color: #fff;
+    font-size: 28px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    margin-left: -60px;
+    margin-top: 90px;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.opponents{
+    margin-top: 100px;
+    margin-left: 80px;
+}
+
+.opponentVsFighter{
+    border-style: solid;
+    border-color: #00FFFF;
+    border-radius: 20px;
+}
+
+.fighter{
+    background: transparent;
+    margin-left: 430px;
+    margin-top: -80px;
+    
+}
+
+.attack{
+    color: #fff;
+    font-size: 28px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    font-family: 'Gaegu', cursive;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 300px;
+    margin-left: 110px;
+
+}
+.fighterOpponent{
+    font-family: 'Gaegu', cursive;
+    color: #fff;
+    font-size: 28px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    background-color: transparent;
+    margin-top: 20px;
+    margin-left: 160px;
+}
+.back{
+    margin-top: 40px;
+    background: #00FFFF;
+    color: black;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Gaegu', cursive;
+}
+.fight{
+    margin-top: 90px;
+    margin-left: -60px;
+    text-align: center;
+}
+
+.fighterInfo{
+   margin-left: -600px;
+}
+
+.opponentInfo{
+    margin-top: -70px;
+    margin-left: 600px;
+}
+
+.health, .attackPower{
+    padding: 5px;
+}
+
+.resultsPage{
+    text-align: center;
+    margin: 100px;
+    margin-top: 40px;
+}
+
+.nextPage, .tryAgain{
+    color: black;
+    font-size: 28px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    font-family: 'Gaegu', cursive;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: -50px;
+    background: transparent;
+}
+
+@media (max-width:1244px){
+    body{
+        background: url("../images/background.jpg");
+        background-size: 1100px;
+        background-position-x: 60px;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+
+    .secondPage{
+        text-align: center;
+        margin: 60px 0px 0px 0px;
+    }
+
+    .opponentVsFighter{
+        border-style: solid;
+        border-color: #00FFFF;
+        border-radius: 20px;
+    }
+
+    .rick{
+        font-family: 'Gaegu', cursive;
+        color: #fff;
+        font-size: 20px;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        margin-left: -30px;
+        margin-top: 70px;
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .morty{
+        font-family: 'Gaegu', cursive;
+        color: #fff;
+        font-size: 20px;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        margin-left: 185px;
+        margin-top: 90px;
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    
+}
+@media (max-width:1080px){
+    body{
+        background: url("../images/background.jpg");
+        background-size: 1100px;
+        background-position-x: -30px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    .rick{
+        font-family: 'Gaegu', cursive;
+        color: #fff;
+        font-size: 20px;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        margin-left: -40px;
+        margin-top: 70px;
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .morty{
+        font-family: 'Gaegu', cursive;
+        color: #fff;
+        font-size: 20px;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        margin-left: 185px;
+        margin-top: 90px;
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .opponents{
+        margin-top: 80px;
+        margin-left: 90px;
+        padding: 3px;
+        background: transparent;
+    }
+}
+@media (max-width:805px){
+    body{
+        background: url("../images/background.jpg");
+        background-size: 900px;
+        background-position-y: 90px;
+        background-position-x: -60px;
+    }
+
+    .start{
+        background-color: #00FFFF;
+        font-family: 'Gaegu', cursive;
+        border-style: solid;
+        border-radius: 10px;
+        margin-top: 300px;
+        margin-left: -20px;
+    }
+
+    .firstPage{
+        margin: 100px 0px 0px 40px;
+    }
+
+    .secondPage{
+        text-align: center;
+        margin: 90px 0px 0px -25px;
+    }
+
+    .rick{
+        font-family: 'Gaegu', cursive;
+        color: #fff;
+        font-size: 20px;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        margin-left: -10px;
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .morty{
+        font-family: 'Gaegu', cursive;
+        color: #fff;
+        font-size: 20px;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        margin-left: 0px;
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .opponents{
+        margin-top: 60px;
+        margin-left: 250px;
+        padding: 3px;
+        background: transparent;
+    }
+
+    .opponentVsFighter{
+        border-style: solid;
+        border-color: #00FFFF;
+        border-radius: 20px;
+        margin-top: 30px;
+    }
+}
+@media (max-width:500px){
+    body{
+        background: url("../images/background.jpg");
+        background-size: 900px;
+        background-position-y: 90px;
+        background-position-x: -200px;
+    }
+
+    h3{
+        font-family: 'Gaegu', cursive;
+        color: #40E0D0;
+        margin-left: 40px;
+    }
+
+    .start{
+        background-color: #00FFFF;
+        font-family: 'Gaegu', cursive;
+        border-style: solid;
+        border-radius: 10px;
+        margin-top: 300px;
+        margin-left: -20px;
+    }
+    .firstPage{
+        margin: 100px 0px 0px 40px;
+    }
+
+    .secondPage{
+        text-align: center;
+        margin: 175px 0px 0px -20px;
+    }
+
+    .rick{
+        font-family: 'Gaegu', cursive;
+        color: #fff;
+        font-size: 20px;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        margin-top: 250px;
+        margin-left: 0px;
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .morty{
+        font-family: 'Gaegu', cursive;
+        color: #fff;
+        font-size: 20px;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        margin-top: 250px;
+        margin-left: 0px;
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .opponents{
+        margin-top: 60px;
+        margin-left: 90px;
+        padding: 3px;
+        background: transparent;
+    }
+}
+
+@media (max-width:450px){
+    body{
+        background: url("../images/background.jpg");
+        background-size: 900px;
+        background-position-y: 90px;
+        background-position-x: -230px;
+    }
+
+    .start{
+        background-color: #00FFFF;
+        font-family: 'Gaegu', cursive;
+        border-style: solid;
+        border-radius: 10px;
+        margin-top: 300px;
+        margin-left: 0px;
+    }
+    .firstPage{
+        margin: 100px 0px 0px 5px;
+    }
+
+    .secondPage{
+        text-align: center;
+        margin: 150px 0px 0px -10px;
+    }
+
+    .rick{
+        font-family: 'Gaegu', cursive;
+        color: #fff;
+        font-size: 20px;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        margin-top: 260px;
+        margin-left: 0px;
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .morty{
+        font-family: 'Gaegu', cursive;
+        color: #fff;
+        font-size: 20px;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        margin-top: 260px;
+        margin-left: 0px;
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .opponents{
+        margin-top: 60px;
+        margin-left: 70px;
+        padding: 3px;
+        background: transparent;
+    }
+}
