@@ -104,6 +104,7 @@ h2{
 .opponents{
     margin-top: 100px;
     margin-left: 80px;
+    background: url("../images/background.jpg");
 }
 
 .opponentVsFighter{
@@ -180,9 +181,22 @@ h2{
     font-family: 'Gaegu', cursive;
     padding: 10px;
     border-radius: 10px;
-    margin-top: 20px;
-    margin-left: -50px;
+    margin-top: 400px;
+    margin-left: -300px;
     background: transparent;
+}
+
+.winPage{
+    margin-top: -300px;
+    margin-left: -200px;
+}
+
+.losePage{
+    margin-left: -130px;
+}
+
+.ultimateWinPage{
+    margin-left: -400px;
 }
 
 @media (max-width:1244px){
@@ -272,7 +286,7 @@ h2{
         margin-top: 80px;
         margin-left: 90px;
         padding: 3px;
-        background: transparent;
+        background: url("../images/background.jpg");
     }
 }
 @media (max-width:805px){
@@ -327,7 +341,7 @@ h2{
         margin-top: 60px;
         margin-left: 250px;
         padding: 3px;
-        background: transparent;
+        background: url("../images/background.jpg");
     }
 
     .opponentVsFighter{
@@ -396,7 +410,7 @@ h2{
         margin-top: 60px;
         margin-left: 90px;
         padding: 3px;
-        background: transparent;
+        background: url("../images/background.jpg");
     }
 }
 
@@ -453,6 +467,6 @@ h2{
         margin-top: 60px;
         margin-left: 70px;
         padding: 3px;
-        background: transparent;
+        background: url("../images/background.jpg");
     }
 }
